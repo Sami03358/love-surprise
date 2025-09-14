@@ -35,7 +35,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   <script>
     // ✅ FIXED: Use relative link (works when opened as file)
-    const link = "love.html";  // make sure love.html is in the same folder
+   const link = "https://<Sami03358>.github.io/love-surprise/love.html";
+new QRCode(document.getElementById("qrcode"), {
+  text: link,
+  width: 220,
+  height: 220,
+  colorDark : "#000000",
+  colorLight : "#ffffff",
+  correctLevel : QRCode.CorrectLevel.H
+});
     new QRCode(document.getElementById("qrcode"), {
       text: link,
       width: 220,
@@ -47,4 +55,5 @@
   </script>
 </body>
 </html>
+
 
